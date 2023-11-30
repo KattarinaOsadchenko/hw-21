@@ -1,0 +1,64 @@
+body{
+  font-family: $main-font-family, sans-serif ;
+  color: $main-font-color;
+  font-size: $font-sm;
+  font-weight: $font-regular;
+  position: relative;
+  line-height: 1.2;
+}
+.container {
+  width: 100%;
+  max-width: $container-width;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.d-flex{
+  display: flex;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
+.align-items-center{
+  align-items: center;
+}
+.flex-column{
+  flex-direction: column;
+}
+h2{
+  color:$additional2-color;
+  font-size: $font-xl;
+  font-style: normal;
+  font-weight: $font-medium;
+  line-height: 1.2;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  @extend %default-transition;
+
+  &.default:hover{
+    color: $accent-color;
+  }
+  &.blue{
+    color: $accent-color;
+    &:hover{
+      color: blue;
+    }
+  }
+
+}
+.btn{
+  padding: 14px 61px;
+  border: 2px solid $accent-color;
+  color: $additional-color;
+  background-color: $accent-color;
+  border-radius: $default-border-radius $big-border-radius;
+
+  &:hover{
+    background-color: steelblue;
+    border-color: $accent-color;
+  }
+}
